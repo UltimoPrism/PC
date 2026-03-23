@@ -75,7 +75,7 @@ body::before {
   margin: 40px 0;
   position: relative;
   width: 90vh;
-  height: 50vh;
+  height: 40vh;
   margin: 80px auto;
   perspective: 1000px;
 }
@@ -105,7 +105,7 @@ body::before {
 }
 
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 600px) {
 .scene {
 
   width: 40vh !important;

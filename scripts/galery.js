@@ -38,8 +38,7 @@
       var cells = carousel.querySelectorAll(".carousel__cell");
       var cellCount;
       var selectedIndex = 0;
-      var cellWidth = carousel.offsetWidth;
-      var cellHeight = carousel.offsetHeight;
+
       var isHorizontal = true;
       var rotateFn = isHorizontal ? "rotateY" : "rotateX";
       var radius, theta;
@@ -50,6 +49,10 @@
           "translateZ(" + -radius + "px) " + rotateFn + "(" + angle + "deg)";
       }
       function changeCarousel() {
+        console.log("dubug")
+        carousel = document.querySelector(".carousel");
+        var cellWidth = carousel.offsetWidth;
+        var cellHeight = carousel.offsetHeight;
         cellCount = images.length;
         theta = 360 / cellCount;
         var cellSize = cellWidth;
@@ -70,3 +73,4 @@
         rotateCarousel();
       }
       changeCarousel();
+      window.addEventListener('resize', () => { changeCarousel(); });
