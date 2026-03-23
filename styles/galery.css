@@ -17,7 +17,7 @@ body::before {
   height: 100%;
   background: url("../images/working/background.webp");
   background-size: 400px;
-  opacity: 0.08;
+  opacity: 0.15;
   pointer-events: none;
   z-index: 0;
 }
