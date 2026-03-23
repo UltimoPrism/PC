@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARS CALACATTA</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles/index.css" rel="stylesheet" />
+    <style></style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="./images/working/Logo.png" alt="Logo" style="height: 30px; width: auto;" />
+        </a>
+        <div class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="galery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="slide active">
+      <div class="content text-center">
+        <div class="text-center">
+          <img
+            src="./images/working/Logo.png"
+            alt="Logo"
+            style="height: 250px; margin-bottom: 5px; width: auto;"
+          />
+          <div class="logo">ARS CALACATTA</div>
+        </div>
+        <p class="underLogo">ATELIER MOZAIKI I WIELKIEGO FORMATU</p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="content row align-items-center">
+        <div class="col-md-6">
+          <h2>O nas</h2>
+          <p>
+            Tutaj jakieś informacje o nas.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="images/featured/temp.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="content row align-items-center">
+        <div class="col-md-6">
+          <img src="images/featured/temp.jpg" alt="" />
+        </div>
+        <div class="col-md-6">
+          <h2>Kolejny Blok</h2>
+          <p>
+            Inny Blok tekstu
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="arrow-container" onclick="nextSlide()">
+      <div class="arrow">↓</div>
+    </div>
+
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
